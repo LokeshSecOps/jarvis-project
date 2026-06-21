@@ -1,11 +1,3 @@
-"""
-J.A.R.V.I.S. - A simple AI chat assistant
-Final Year Project
-
-Backend: Flask
-AI Brain: Groq API (free, fast, Llama 3.3 70B)
-"""
-
 import os
 from flask import Flask, request, jsonify, render_template
 from groq import Groq
