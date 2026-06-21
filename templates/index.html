@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>J.A.R.V.I.S.</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+  <div class="app">
+    <header class="topbar">
+      <div class="logo-ring"></div>
+      <div class="title-block">
+        <h1>J.A.R.V.I.S.</h1>
+        <p>Just A Rather Very Intelligent System</p>
+      </div>
+      <button id="resetBtn" class="reset-btn" title="Clear conversation">Reset</button>
+    </header>
+
+    <main id="chatWindow" class="chat-window">
+      <div class="message assistant">
+        <div class="bubble">
+          Online and ready. How can I assist you today?
+        </div>
+      </div>
+    </main>
+
+    <form id="chatForm" class="input-row">
+      <input
+        id="userInput"
+        type="text"
+        placeholder="Ask J.A.R.V.I.S. anything..."
+        autocomplete="off"
+        required
+      />
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
