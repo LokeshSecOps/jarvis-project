@@ -85,6 +85,76 @@ body {
   color: var(--accent);
 }
 
+.voice-toggle-btn {
+  background: transparent;
+  border: 1px solid var(--accent-dim);
+  color: var(--text-dim);
+  padding: 7px 9px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s;
+}
+
+.voice-toggle-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.voice-toggle-btn[aria-pressed="true"] {
+  border-color: var(--accent);
+  color: var(--accent);
+  box-shadow: 0 0 8px rgba(31, 198, 255, 0.3);
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
+.icon-speaker-off { display: block; }
+.icon-speaker-on { display: none; }
+.voice-toggle-btn[aria-pressed="true"] .icon-speaker-off { display: none; }
+.voice-toggle-btn[aria-pressed="true"] .icon-speaker-on { display: block; }
+
+.mic-btn {
+  background: var(--panel);
+  border: 1px solid var(--accent-dim);
+  color: var(--text);
+  padding: 11px 13px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+
+.mic-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.mic-btn[aria-pressed="true"] {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #00131a;
+  animation: mic-pulse 1.2s ease-in-out infinite;
+}
+
+@keyframes mic-pulse {
+  0%, 100% { box-shadow: 0 0 6px var(--accent); }
+  50% { box-shadow: 0 0 16px var(--accent); }
+}
+
+.mic-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
 .chat-window {
   flex: 1;
   overflow-y: auto;

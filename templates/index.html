@@ -16,6 +16,17 @@
         <p>Just A Rather Very Intelligent System</p>
       </div>
       <button id="resetBtn" class="reset-btn" title="Clear conversation">Reset</button>
+      <button id="voiceToggleBtn" class="voice-toggle-btn" title="Toggle spoken replies" aria-pressed="false">
+        <svg class="icon icon-speaker-on" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 9.5V14.5C4 15.0523 4.44772 15.5 5 15.5H8L13 19.5V4.5L8 8.5H5C4.44772 8.5 4 8.94772 4 9.5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+          <path d="M16.5 8.5C17.5 9.5 18 10.7 18 12C18 13.3 17.5 14.5 16.5 15.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          <path d="M18.5 6C20 7.5 20.8 9.6 20.8 12C20.8 14.4 20 16.5 18.5 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" opacity="0.6"/>
+        </svg>
+        <svg class="icon icon-speaker-off" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 9.5V14.5C4 15.0523 4.44772 15.5 5 15.5H8L13 19.5V4.5L8 8.5H5C4.44772 8.5 4 8.94772 4 9.5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+          <path d="M16 9L20.5 13.5M20.5 9L16 13.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+      </button>
     </header>
 
     <main id="chatWindow" class="chat-window">
@@ -27,6 +38,14 @@
     </main>
 
     <form id="chatForm" class="input-row">
+      <button type="button" id="micBtn" class="mic-btn" title="Speak your message" aria-pressed="false">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 15C13.6569 15 15 13.6569 15 12V6C15 4.34315 13.6569 3 12 3C10.3431 3 9 4.34315 9 6V12C9 13.6569 10.3431 15 12 15Z" stroke="currentColor" stroke-width="1.6"/>
+          <path d="M6 11V12C6 15.3137 8.68629 18 12 18C15.3137 18 18 15.3137 18 12V11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          <path d="M12 18V21" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+          <path d="M9 21H15" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+      </button>
       <input
         id="userInput"
         type="text"
