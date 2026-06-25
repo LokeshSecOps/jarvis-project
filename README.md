@@ -7,7 +7,7 @@ A simple, free AI chat assistant. Backend in Flask, brain powered by Groq's free
 ## 1. Get your free Groq API key (2 min) 
 
 1. Go to https://console.groq.com/keys
-2. Sign up (free, no credit card)
+2. Sign up (free, no credit card) 
 3. Click "Create API Key", copy it
 
 ## 2. Run it locally (5 min)
