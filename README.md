@@ -2,7 +2,7 @@
 
 A simple, free AI chat assistant. Backend in Flask, brain powered by Groq's free API (Llama 3.3 70B).
 
----
+--- 
 
 ## 1. Get your free Groq API key (2 min) 
 
