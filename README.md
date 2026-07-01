@@ -12,6 +12,7 @@ A simple, free AI chat assistant. Backend in Flask, brain powered by Groq's free
 
 ## 2. Run it locally (5 min)
 
+
 ```bash
 cd jarvis-project
 pip install -r requirements.txt
