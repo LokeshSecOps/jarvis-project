@@ -10,7 +10,7 @@ A simple, free AI chat assistant. Backend in Flask, brain powered by Groq's free
 2. Sign up (free, no credit card) 
 3. Click "Create API Key", copy it
 
-## 2. Run it locally (5 min)
+## 2. Run it locally (5 min) 
 
 
 ```bash
