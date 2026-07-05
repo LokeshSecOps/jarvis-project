@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 load_dotenv()   
    
 app = Flask(__name__)
-
+ 
 # Secret key used to sign the session cookie. In production, set this via
 # an environment variable so it isn't regenerated (and all sessions lost)
 # every time the server restarts.
