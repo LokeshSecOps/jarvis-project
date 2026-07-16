@@ -3,7 +3,7 @@ import uuid
 from flask import Flask, request, jsonify, render_template, session
 from groq import Groq
 from dotenv import load_dotenv
-
+ 
 load_dotenv()      
       
 app = Flask(__name__)   
