@@ -5,7 +5,7 @@ from groq import Groq
 from dotenv import load_dotenv 
   
 load_dotenv()      
-       
+        
 app = Flask(__name__)   
   
 # Secret key used to sign the session cookie. In production, set this via
